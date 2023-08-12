@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+#inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 17rem;
+    border-radius: 2rem;
+    max-width: 125rem;
+    background-color: rgb(41, 75, 90);
+    width: 100%;
+}
+
+#btns {
+    display: flex;
+    margin-top: 4rem;
+    gap: 2rem;
+    flex-direction: row; /* Empilhar os botões em telas menores */
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+    padding: 0rem 2rem;
+    text-align: center;
+    height: 6rem;
+    border-radius: 1rem;
+    background-color: rgb(41, 75, 90);
+}
+
+ul li {
+    font-size: 1.5rem;
+    text-align: center;
+    list-style: none;
+    margin-top: 0.7rem;
+    font-weight: 500;
+    color: rgb(25, 45, 54);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#alunoBusca {
+    font-size: 2rem;
+    margin-top: 7rem;
+    color: rgb(182, 16, 16);
+    font-weight: bold;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding: 0.8rem;
+    color:  whitesmoke;
+}
+
+input {
+    border: none;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+}
+
+button {
+    border: none;
+    background-color: rgb(41, 75, 90);
+    color: whitesmoke;
+    padding: 0 0.7rem;
+    height: 2.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: rgb(25, 45, 54);
+}
+
+th, tbody {
+    font-size: 2rem;
+    display: flex;
+}
+
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    #inputs {
+        height: auto; /* Ajustar a altura automaticamente */
+    }
+
+    #btns {
+        flex-direction: column; /* Voltar à direção original */
+        flex-wrap: wrap;
+        justify-content: center; /* Centralizar os botões */
+        margin-top: 3rem;
+        gap: 1.5rem;
+    }
+
+    input {
+        width: 100%; /* Ocupar a largura total disponível */
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 50%; /* Reduzir o tamanho da fonte para telas menores */
+    }
+
+    h1 {
+        font-size: 3rem; /* Reduzir o tamanho do título */
+        height: 4rem;
+    }
+
+    body {
+        overflow: auto;
+    }
+
+    #alunoBusca {
+        margin-top: 2rem;
+        font-size: 1.7rem;
+    }
+
+    ul li {
+        font-size: 1.2rem; /* Reduzir o tamanho do texto explicativo */
+        margin-top: 1.4rem;
+    }
+
+    label {
+        font-size: 1.5rem; /* Reduzir o tamanho das labels */
+        padding: 0.3rem; /* Reduzir o espaçamento interno das labels */
+    }
+
+    input {
+        font-size: 1.5rem; /* Reduzir o tamanho das entradas de texto */
+        padding: 0.4rem;
+        text-align: center;
+        /* height: 2rem; */
+    }
+
+    button {
+        font-size: 1.2rem; /* Reduzir o tamanho dos botões */
+        padding: 0.4rem 0.5rem; /* Ajustar o espaçamento dos botões */
+    }
+}

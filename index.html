@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Projeto Final</title>
+</head>
+<body>
+    <hr>
+    <div id="container">
+        <h1>&#128218; Lógica Sempre &#128218;</h1>
+        <div id="inputs">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" placeholder="Digite o código do aluno">
+        
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do aluno">
+        
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" placeholder="Digite o sobrenome do aluno">
+        
+            <label for="e-mail">E-mail:</label>
+            <input type="email" id="e-mail" placeholder="Digite o e-mail do aluno">
+        
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" placeholder="Digite a nota 1 do aluno">
+        
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" placeholder="Digite a nota 2 do aluno">
+        
+            <label for="nota3">Nota 3:</label>
+            <input type="number" id="nota3" placeholder="Digite a nota 3 do aluno">
+        </div>
+            <ul>
+                <li>Para <span class="bold">cadastrar</span> um aluno, preencha <span class="bold">todos os campos</span> com as informações solicitadas;</li>
+                <li>Para <span class="bold">remover</span>, <span class="bold">buscar</span>, <span class="bold">desativar</span>, <span class="bold">reativar</span> ou <span class="bold">calcular a média</span> de um aluno, digite <span class="bold">apenas o código</span> e clique no botão que realize a função desejada.</li>
+            </ul>
+        <div id="btns">
+            <button onclick="cadastrar()">Cadastrar</button>
+            <button onclick="remover()">Remover</button>
+            <button onclick="buscar()">Buscar</button>
+            <button onclick="listaCompleta()">Lista completa</button>
+            <button onclick="calcularMedia()">Calcular média</button>
+            <button onclick="desativarAluno()">Desativar</button>
+            <button onclick="reativarAluno()">Reativar</button>
+            <button onclick="listaDeAtivos()">Lista de ativos</button>
+            <button onclick="listaDeInativos()">Lista de inativos</button>
+            <button onclick="alunosMediaGood()">Alunos dentro da média</button>
+            <button onclick="alunosMediaBad()">Alunos abaixo da média</button>
+        </div>
+        <span id="alunoBusca"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
