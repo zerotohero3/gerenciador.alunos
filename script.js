@@ -121,7 +121,8 @@ function listaCompleta() {
         let mensagem = "Lista de Alunos:\n" + "\n";
 
         estoqueAlunos.forEach(aluno => {
-            mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Ativo: " + aluno.ativo + "\n";
+            const ativo = aluno.ativo ? "Sim" : "Não";
+            mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Ativo: " + ativo + "\n" + "\n";
         });
 
         listaCompletaAlunos.innerText = mensagem;
@@ -196,7 +197,8 @@ function listaDeAtivos() {
         let mensagem = "Lista de alunos ativos:\n" + "\n";
 
         alunosAtivos.forEach(aluno => {
-            mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Ativo: " + aluno.ativo + "\n";
+            const ativo = aluno.ativo ? "Sim" : "Não";
+            mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Ativo: " + ativo + "\n" + "\n";
         });
 
         mostrarListaAtivos.innerText = mensagem;
@@ -214,7 +216,8 @@ function listaDeInativos() {
         let mensagem = "Lista de alunos inativos:\n" + "\n";
 
         alunosInativos.forEach(aluno => {
-            mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Ativo: " + aluno.ativo + "\n";
+            const ativo = aluno.ativo ? "Sim" : "Não";
+            mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Ativo: " + ativo + "\n" + "\n";
         });
 
         mostrarListaInativos.innerText = mensagem;
@@ -237,7 +240,7 @@ function alunosMediaGood() {
     let mensagem = "Alunos dentro da média esperada:\n" + "\n";
 
     alunosMediaBoa.forEach(aluno => {
-        mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Média: " + aluno.media.toFixed(2) + "\n";
+        mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Média: " + aluno.media.toFixed(2) + "\n" + "\n";
     });
 
     alunosNaMedia.innerText = mensagem;
@@ -259,7 +262,7 @@ function alunosMediaBad() {
     let mensagem = "Alunos abaixo da média esperada:\n" + "\n";
 
     alunosMediaRuim.forEach(aluno => {
-        mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Média: " + aluno.media.toFixed(2) + "\n";
+        mensagem += "Código: " + aluno.codigo + " | Nome: " + aluno.nome + " | Sobrenome: " + aluno.sobrenome + " | E-mail: " + aluno.email + " | Notas: " + aluno.notas.join(", ") + " | Média: " + aluno.media.toFixed(2) + "\n" + "\n";
     });
 
     alunosForaDaMedia.innerText = mensagem;
