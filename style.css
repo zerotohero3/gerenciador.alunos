@@ -150,11 +150,14 @@ th, tbody {
     #alunoBusca {
         margin-top: 2rem;
         font-size: 1.7rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
     }
 
     ul li {
         font-size: 1.2rem; /* Reduzir o tamanho do texto explicativo */
         margin-top: 1.4rem;
+        padding: 0.1rem;
     }
 
     label {
