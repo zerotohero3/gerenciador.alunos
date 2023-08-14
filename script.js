@@ -91,7 +91,8 @@ const buscar = () => {
     const alunoEncontrado = document.getElementById("alunoBusca");
 
     if (codigoBuscado) {
-        const mensagem = "ALUNO ENCONTRADO: " + "Código: " + codigoBuscado.codigo + " | Nome: " + codigoBuscado.nome + " | Sobrenome: " + codigoBuscado.sobrenome + " | E-mail: " + codigoBuscado.email + " | Notas: " + codigoBuscado.notas + " | Ativo: " + codigoBuscado.ativo;
+        const ativo = codigoBuscado.ativo ? "Sim" : "Não";
+        const mensagem = "ALUNO ENCONTRADO: " + "Código: " + codigoBuscado.codigo + " | Nome: " + codigoBuscado.nome + " | Sobrenome: " + codigoBuscado.sobrenome + " | E-mail: " + codigoBuscado.email + " | Notas: " + codigoBuscado.notas + " | Ativo: " + ativo;
         alunoEncontrado.innerText = mensagem;
     } else {
         alunoEncontrado.innerText = "Aluno buscado não encontrado!";
