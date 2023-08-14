@@ -65,7 +65,12 @@ function cadastrar () {
         }
     }
 
+    const cadastroSucess = document.getElementById("alunoBusca");
+    cadastroSucess.innerText = "Cadastro realizado com sucesso!"
+    
     estoqueAlunos.push(alunosDaLista);
+
+
     inputCodigo.value = "";
     inputNome.value = "";
     inputSobrenome.value = "";
